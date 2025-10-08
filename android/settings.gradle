@@ -1,1 +1,23 @@
 rootProject.name = 'newpipeextractor_dart'
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencyResolutionManagement {
+    // Prevent modules from declaring their own repositories
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // Add JitPack for NewPipeExtractor dependency
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+include(":app")
