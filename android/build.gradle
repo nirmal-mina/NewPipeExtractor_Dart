@@ -1,3 +1,5 @@
+package android
+
 group 'com.artxdev.newpipeextractor_dart'
 version '1.0'
 
@@ -31,10 +33,10 @@ allprojects {
 android {
     namespace "com.artxdev.newpipeextractor_dart"
 
-    compileSdkVersion 34
+    compileSdkVersion 36
 
     defaultConfig {
-        minSdkVersion 22
+        minSdkVersion 24
         // Required when setting minSdkVersion to 20 or lower
         multiDexEnabled true
     }
