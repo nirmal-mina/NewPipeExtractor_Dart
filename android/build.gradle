@@ -55,9 +55,9 @@ dependencies {
 
     // ✅ FIX: Ensure JitPack resolves NewPipeExtractor
     // If v0.24.2 fails, switch to commit hash version below:
-    implementation 'com.github.TeamNewPipe:NewPipeExtractor:v0.24.2'
+    // implementation 'com.github.TeamNewPipe:NewPipeExtractor:v0.24.2'
     // Alternative (uncomment this if the above fails):
-    // implementation 'com.github.TeamNewPipe:NewPipeExtractor:176da72cb4c3ec4679211339b0e59f6b01bf2f52'
+    implementation 'com.github.TeamNewPipe:NewPipeExtractor:176da72cb4c3ec4679211339b0e59f6b01bf2f52'
 
     implementation 'org.jsoup:jsoup:1.13.1'
     implementation 'org.mozilla:rhino:1.7.12'
@@ -71,3 +71,4 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:3.12.13"
     implementation 'com.google.code.gson:gson:2.8.6'
 }
+
