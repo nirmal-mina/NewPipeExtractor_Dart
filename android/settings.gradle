@@ -5,19 +5,21 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+        // Ensure JitPack is available for plugin artifacts
         maven { url 'https://jitpack.io' }
     }
 }
 
 dependencyResolutionManagement {
-    // Prevent modules from declaring their own repositories
+    // Keep FAIL so project-level repositories won't silently override
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        // Add JitPack for NewPipeExtractor dependency
+        // crucial: JitPack for TeamNewPipe artifacts
         maven { url 'https://jitpack.io' }
     }
 }
 
+// include your Flutter app module
 include(":app")
